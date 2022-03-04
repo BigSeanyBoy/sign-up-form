@@ -8,7 +8,49 @@
   <title>Sign-up Form</title>
 </head>
 <body>
-  <h1>This is a sign-up form</h1>
-  <p>With Styling!</p>
+  <div class="logo">
+    <img src="background-image.jpg" alt="Rainy Leaves">
+    <div class="logo-shade">
+      <img src="odin-lined.png" alt="Odin Logo">
+    </div>
+    <div class="credit">
+      Photo by Halie West on Unsplash
+    </div>
+  </div>
+  <div class="content">
+    <p class="header">
+      This is not a real online service! You know you need something 
+      like this in your life to help you realize your deepest dreams. 
+      Sign up <em>now</em> to get started.
+    </p>
+    <p class="plea">
+      You <em>know</em> you want to.
+    </p>
+    <form action="" class="user-info">
+      <div class="form-header">Let's do this!</div>
+      <div class="row-one">
+        <label for="first_name" class="first_name">FIRST NAME</label>
+        <input type="text" name="first_name" id="first_name" class="first_name">
+        <label for="last_name" class="last_name">LAST NAME</label>
+        <input type="text" name="last_name" id="last_name" class="last_name">
+      </div>
+      <div class="row-two">
+        <label for="user_email" class="user_email">EMAIL</label>
+        <input type="email" name="user_email" id="user_email" class="user_email">
+        <label for="phone" class="phone">PHONE NUMBER</label>
+        <input type="tel" name="phone" id="phone" class="phone">
+      </div>
+      <div class="row-three">
+        <label for="password" class="password">PASSWORD</label>
+        <input type="password" name="password" id="password" class="password">
+        <label for="password_confirm" class="password_confirm">CONFIRM PASSWORD</label>
+        <input type="password" name="password_confirm" id="password_confirm" class="password_confirm">
+      </div>
+    </form>
+    <button>Create Account</button>
+    <div class="current-user">
+      Already have an account? <a href="">Log in</a>
+    </div>
+  </div>
 </body>
 </html>
