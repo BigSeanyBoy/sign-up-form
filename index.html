@@ -15,7 +15,7 @@
       <div id="logo-text">ODIN</div>
     </div>
     <div id="credit">
-      Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+      Photo by <a href="https://unsplash.com/@haliewestphoto" class="credit">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA" class="credit">Unsplash</a>
     </div>
   </div>
   <div class="content">
@@ -29,28 +29,36 @@
     </p>
     <form action="" class="user-info">
       <div class="form-header">Let's do this!</div>
-      <div class="row-one">
+      <div class="row">
         <label for="first_name" class="first_name">FIRST NAME</label>
-        <input type="text" name="first_name" id="first_name" class="first_name">
         <label for="last_name" class="last_name">LAST NAME</label>
+      </div>
+      <div class="row">
+        <input type="text" name="first_name" id="first_name" class="first_name">
         <input type="text" name="last_name" id="last_name" class="last_name">
       </div>
-      <div class="row-two">
+      <div class="row">
         <label for="user_email" class="user_email">EMAIL</label>
-        <input type="email" name="user_email" id="user_email" class="user_email">
         <label for="phone" class="phone">PHONE NUMBER</label>
+      </div>
+      <div class="row">
+        <input type="email" name="user_email" id="user_email" class="user_email">
         <input type="tel" name="phone" id="phone" class="phone">
       </div>
-      <div class="row-three">
+      <div class="row">
         <label for="password" class="password">PASSWORD</label>
-        <input type="password" name="password" id="password" class="password">
         <label for="password_confirm" class="password_confirm">CONFIRM PASSWORD</label>
+      </div>
+      <div class="row">
+        <input type="password" name="password" id="password" class="password_confirm">
         <input type="password" name="password_confirm" id="password_confirm" class="password_confirm">
       </div>
     </form>
-    <button>Create Account</button>
-    <div class="current-user">
-      Already have an account? <a href="">Log in</a>
+    <div class="registration">
+      <button>Create Account</button>
+      <div class="current-user">
+        Already have an account? <a href="#">Log in</a>
+      </div>
     </div>
   </div>
 </body>

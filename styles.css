@@ -8,6 +8,7 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   display: flex;
+  background-color: whitesmoke;
 }
 
 .logo {
@@ -34,7 +35,7 @@ body {
 
 #logo-text,
 #credit,
-a {
+.credit {
   color: white;
 }
 
@@ -51,4 +52,58 @@ a {
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
+}
+
+.content {
+  padding: 15vh 0;
+}
+
+.header,
+.plea {
+  padding-right: 15%;
+  padding-left: max(10px, 5%);
+}
+
+.user-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: max(10px, 5%);
+}
+
+.user-info > *:nth-child(2n) {
+  padding-top: 10px;
+}
+
+.user-info > *:nth-child(2n + 1) {
+  padding-bottom: 10px;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+}
+
+.row > * {
+  width: 15vw;
+}
+
+.row > label:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.row > input:nth-child(2n) {
+  margin-left: 36px;
+}
+
+.registration {
+  padding-left: max(10px, 5%);
+}
+
+button {
+  margin: max(10px, 3%) 0;
 }
