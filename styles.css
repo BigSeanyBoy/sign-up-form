@@ -3,6 +3,11 @@
   src: url(/Users/seanhammell/Library/Fonts/Norse-Bold.otf);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -30,7 +35,7 @@ body {
 }
 
 #odin-logo {
-  height: min(6rem, 24vh); /* function for size */
+  height: min(6rem, 24vh);
 }
 
 #logo-text,
@@ -42,24 +47,24 @@ button {
 
 #logo-text {
   font-family: "Norse Bold";
-  font-size: min(5rem, 20vh); /* function for size */
+  font-size: min(5rem, 20vh);
   padding-top: min(1rem, 4vh);
 }
 
 #credit {
   font-size: min(1rem, 4vh);
   position: absolute;
-  bottom: 0;
+  top: 95vh;
   padding-bottom: 20px;
   width: 100%;
   text-align: center;
 }
 
 .content {
-  padding: 15vh 0;
+  padding: 15vh 0 0 0;
 }
 
-.header,
+.header-text,
 .plea {
   font-weight: 500;
   font-size: 1.25rem;
@@ -76,6 +81,7 @@ button {
   display: flex;
   flex-direction: column;
   padding-left: max(10px, 5%);
+  padding-bottom: 20px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -92,10 +98,6 @@ input {
   padding: 5px;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
-}
-
-input[type="password"] {
-  margin-bottom: 20px;
 }
 
 input:focus {
@@ -147,4 +149,17 @@ label {
 #login {
   text-decoration: none;
   color: #596d48;
+}
+
+.error {
+  outline: none;
+  border: 1px solid rgb(185, 0, 0);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+#validation {
+  margin: 0;
+  padding: 0;
+  color: rgb(185, 0, 0);
+  font-size: 0.6rem;
 }
