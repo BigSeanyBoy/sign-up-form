@@ -35,7 +35,8 @@ body {
 
 #logo-text,
 #credit,
-.credit {
+.credit,
+button {
   color: white;
 }
 
@@ -60,8 +61,14 @@ body {
 
 .header,
 .plea {
+  font-weight: 500;
+  font-size: 1.25rem;
   padding-right: 15%;
   padding-left: max(10px, 5%);
+}
+
+.plea {
+  margin-bottom: 40px;
 }
 
 .user-info {
@@ -69,6 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: max(10px, 5%);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .user-info > *:nth-child(2n) {
@@ -81,7 +89,19 @@ body {
 
 input {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .row {
@@ -97,7 +117,7 @@ input {
 }
 
 .row > input:nth-child(2n) {
-  margin-left: 36px;
+  margin-left: 26px;
 }
 
 .registration {
@@ -105,5 +125,26 @@ input {
 }
 
 button {
-  margin: max(10px, 3%) 0;
+  font-weight: 600;
+  margin: 20px 0;
+  padding: 0.75rem 3rem;
+  background-color: #596d48;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.form-header {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
+label {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+
+#login {
+  text-decoration: none;
+  color: #596d48;
 }
