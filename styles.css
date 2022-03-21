@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Norse Bold";
   src: url(/Users/seanhammell/Library/Fonts/Norse-Bold.otf);
+  src: url("../sign-up-form/Norse-Bold.otf") format('opentype');
 }
 
 html,
